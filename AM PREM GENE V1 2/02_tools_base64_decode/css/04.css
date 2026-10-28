@@ -1,0 +1,8 @@
+
+:root{--yellow:#8b00f5!important;--blue:#111111!important;--comic:#ffffff!important;--paper:#ffffff!important;}
+html,body{background-color:#8b00f5!important;background-image:repeating-conic-gradient(#8b00f5 0% 25%,#ffffff 0% 50%)!important;background-size:36px 36px!important;background-attachment:fixed!important;}
+body::before,body::after{background-image:none!important;}
+/* Headline ribbons that previously used blue become black */
+.tool-detail-title,.tool-title,.comic-title,.comic-label,.result-label,.badge-blue,.blue-label{color:#111111!important;}
+/* Ensure no leftover yellow UI accents */
+button,.btn,.btn-primary,.run-btn,.reset-btn{border-color:#111111;}

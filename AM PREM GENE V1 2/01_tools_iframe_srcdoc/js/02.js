@@ -1,0 +1,1 @@
+window.LAXX_VERIFIED=true; try{sessionStorage.setItem("laxx-human-verified","1");}catch(e){} var g=document.getElementById("turnstileGate"); if(g)g.style.display="none";

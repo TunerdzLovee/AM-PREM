@@ -1,0 +1,30 @@
+
+/* Restore the icon tiles in tool cards after the purple theme change */
+#tools .card .icon,
+#tools .card .toolIcon,
+#tools .card .tool-icon,
+#tools .card .iconBox,
+#tools .card .icon-box {
+  background: #8b00f5 !important;
+  color: #ffffff !important;
+  border-color: #050505 !important;
+}
+#tools .card .icon *,
+#tools .card .toolIcon *,
+#tools .card .tool-icon *,
+#tools .card .iconBox *,
+#tools .card .icon-box * {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#tools .card .icon img,
+#tools .card .toolIcon img,
+#tools .card .tool-icon img {
+  object-fit: contain !important;
+  background: transparent !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}

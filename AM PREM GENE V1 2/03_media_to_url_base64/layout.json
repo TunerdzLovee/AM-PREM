@@ -1,0 +1,14 @@
+[
+ {
+  "kind": "css",
+  "file": "css/01.css",
+  "open": "<style>",
+  "close": "</style>"
+ },
+ {
+  "kind": "js",
+  "file": "js/01.js",
+  "open": "<script>",
+  "close": "</script>"
+ }
+]

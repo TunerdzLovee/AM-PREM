@@ -1,0 +1,171 @@
+<html lang="id"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM Premium — ndraa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Poppins:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/01.css">
+<link rel="stylesheet" href="css/02.css"><link rel="stylesheet" href="css/03.css"><link rel="stylesheet" href="css/04.css"></head>
+<body class="">
+  <!-- PRE-INTRO START SCREEN -->
+  
+  <!-- INTRO VIDEO -->
+  
+
+
+  <script src="js/01.js"></script>
+
+  <!-- HOME -->
+  <div id="page-home" class="page active">
+    <div class="home-welcome-pill">WELCOME REZE</div>
+    <div id="petunjukMain" class="play-hint" onclick="mainkanLagu()">
+      <i class="fas fa-play"></i> KETUK UNTUK NYALAKAN LAGU 🎵
+    </div>
+    <div class="home-anime-card" onclick="mainkanLagu()">
+      <video src="https://files.catbox.moe/x12w0b.MP4" autoplay="" loop="" muted="" playsinline="" class="home-anime-video"></video>
+    </div>
+    <div class="music-card" onclick="mainkanLagu()">
+      <div class="music-title">
+        <i class="fas fa-music music-icon"></i> LAGU LATAR
+      </div>
+      <audio id="laguLatar" loop="" preload="auto">
+        <source src="https://files.catbox.moe/kw43cg.MP3" type="audio/mpeg">
+      
+    </audio></div>
+    <div class="comic-card-white">
+      <div class="fss-box">
+        <div class="fss-icon"><i class="fas fa-crown"></i></div>
+        <h3 class="fss-title">ALIGHT PREMIUM</h3>
+        <p class="text-sm text-gray-500">adalah fitur utama</p>
+      </div>
+    </div>
+    <div class="comic-card-white">
+      <div class="text-center">
+        <i class="fas fa-wrench text-2xl text-purple-500 mb-2"></i>
+        <h3 class="font-anton text-purple-600 text-lg">FITUR LAINNYA</h3>
+        <p class="font-bold text-purple-700"> nikmati 26 tools tambahan </p>
+        <p class="text-sm text-purple-500 mt-1">fitur lain nya ada tools</p>
+      </div>
+    </div>
+    <button onclick="mainkanLagu(); switchPage('activate')" class="btn-yellow-comic mt-6">AKTIFKAN SEKARANG →</button>
+  </div>
+
+  <!-- AKTIVASI -->
+  <div id="page-activate" class="page">
+    <div class="flex justify-center mb-4 pt-2">
+      <div class="title-pill"><h1>AKTIVASI 🌐</h1></div>
+    </div>
+    <div class="home-anime-card">
+      <video src="https://files.catbox.moe/x12w0b.MP4" autoplay="" loop="" muted="" playsinline="" class="home-anime-video"></video>
+    </div>
+    <div class="comic-card-purple">
+      <h2 class="font-anton text-center text-xl mb-6 text-white">
+        Verifikasi EMAIL<br>DAN MENIKMATI PREMIUM 1 TAHUN
+      </h2>
+      <label class="font-anton text-white text-lg mb-2 block">Email</label>
+      <input type="email" id="amEmail" class="comic-input" placeholder="email@kamu.com">
+      <button onclick="amKirim()" class="btn-yellow-comic">KIRIM LINK</button>
+      <p id="amMsg" class="msg-text"></p>
+      <div id="amStep2" style="display:none; margin-top:20px;">
+        <label class="font-anton text-white text-lg mb-2 block">Link Verifikasi</label>
+        <input type="text" id="amLink" class="comic-input" placeholder="Tempel link di sini...">
+        <button onclick="amVerif()" class="btn-yellow-comic">VERIFIKASI</button>
+        <p id="amMsg2" class="msg-text"></p>
+      </div>
+      <div id="amHasil" class="result-box" style="display:none; margin-top:16px;">
+        <p class="font-anton text-green-600 text-xl text-center mb-3">✅ PREMIUM AKTIF!</p>
+        <p id="amResEmail" class="text-center font-bold">—</p>
+        <button onclick="ulangiVerifikasi()" class="btn-yellow-comic mt-4">ULANGI LANGSUNG</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO -->
+  <div id="page-info" class="page">
+    <div class="flex justify-center mb-4 pt-2">
+      <div class="title-pill"><h1>INFORMASI</h1></div>
+    </div>
+    <div class="comic-card-purple mb-3">
+      <h2 class="font-anton text-center text-xl mb-4 text-white">CHANNEL OWNER</h2>
+      <a href="https://whatsapp.com/channel/0029Vb86r5u9MF99HIOdtF3g" target="_blank" class="wa-link">
+        <div class="wa-icon"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <p class="font-anton text-white text-lg">Terima Kasih</p>
+          <p class="font-anton text-white text-lg">dan ikuti saluranku</p>
+        </div>
+      </a>
+    </div>
+    <div class="comic-card-purple text-center mb-3">
+      <h2 class="font-anton text-center text-xl mb-4 text-white">   Waktu terus bergerak tanpa pernah berhenti sekalipun </h2>
+      <div class="jam-besar" id="jamSekarang">00.23.31</div>
+      <p class="font-anton text-white text-base mt-3">Jadi jangan menyia-nyiakan waktu mu, karna waktu tak bisa diulang kembali.</p>
+      <span class="status-badge">● SISTEM ONLINE</span>
+    </div>
+    <div class="divider-line"></div>
+    <div class="info-feature-grid">
+      <div class="info-mini-card">
+        <i class="fas fa-bolt info-mini-icon"></i>
+        <h4 class="info-mini-title">CEPAT</h4>
+        <p class="info-mini-desc">antre admin jomblo</p>
+      </div>
+      <div class="info-mini-card">
+        <i class="fas fa-shield-alt info-mini-icon"></i>
+        <h4 class="info-mini-title">AMAN</h4>
+        <p class="info-mini-desc">hati-hati admin wibu</p>
+      </div>
+      <div class="info-mini-card">
+        <i class="fas fa-sync-alt info-mini-icon"></i>
+        <h4 class="info-mini-title">LANGSUNG</h4>
+        <p class="info-mini-desc">bisa premium akun sebanyak mungkin</p>
+      </div>
+      <div class="info-mini-card">
+        <i class="fas fa-headphones info-mini-icon"></i>
+        <h4 class="info-mini-title">MUSIK</h4>
+        <p class="info-mini-desc">MUSIK SAT ADMIN ITAYO-ITAYO</p>
+      </div>
+    </div>
+    <div class="comic-card-white text-center mt-2">
+      <p class="font-anton text-purple-600 text-lg">SELAMAT MENIKMATI 💜</p>
+      <p class="text-sm text-gray-500 mt-2">masih tahap beta maklum</p>
+    </div>
+  </div>
+
+  <!-- Tools terintegrasi dalam satu file; iframe dijaga setinggi layar agar navigasi tool tidak terlempar ke area kosong -->
+  <div id="page-tools" class="page">
+    <iframe id="toolsFrame" title="Semua Tools" loading="eager" referrerpolicy="no-referrer" src="../01_tools_iframe_srcdoc/index.html"></iframe>
+  </div>
+
+  <!-- NAVIGASI BAWAH -->
+  <nav class="bottom-nav">
+    <div class="nav-item active" id="nav-home" onclick="mainkanLagu(); switchPage('home')">
+      <i class="fas fa-home nav-icon"></i>
+      <span class="nav-label">HOME</span>
+    </div>
+    <div class="nav-item" id="nav-activate" onclick="mainkanLagu(); switchPage('activate')">
+      <i class="fas fa-crown nav-icon"></i>
+      <span class="nav-label">AKTIFASI</span>
+    </div>
+    <div class="nav-item" id="nav-tools" onclick="switchPage('tools')">
+      <i class="fas fa-toolbox nav-icon"></i>
+      <span class="nav-label">TOOLS</span>
+    </div>
+    <div class="nav-item" id="nav-info" onclick="mainkanLagu(); switchPage('info')">
+      <i class="fas fa-info nav-icon"></i>
+      <span class="nav-label">INFO</span>
+    </div>
+  </nav>
+
+  <!-- SCRIPT -->
+  <script src="js/02.js"></script>
+
+  <script src="js/03.js"></script>
+
+
+
+  <script src="js/04.js"></script>
+
+
+</body><div id="eruda" style="all: initial;"></div><div class="__chobitsu-hide__" style="all: initial;"></div></html>

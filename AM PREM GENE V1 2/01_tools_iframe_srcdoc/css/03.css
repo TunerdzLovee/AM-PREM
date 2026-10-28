@@ -1,0 +1,8 @@
+
+/* FIX: kartu-kartu Tools selalu berada di lapisan paling atas */
+.tool-card,.toolCard,.tool-box,.toolBox,.feature-card,.card{
+  position:relative !important; z-index:500 !important; isolation:isolate;
+}
+.tool-card *, .toolCard *, .tool-box *, .toolBox *, .feature-card *, .card *{
+  position:relative; z-index:1;
+}
